@@ -1,0 +1,128 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{amssymb}
+\usepackage[fleqn]{amsmath}
+\usepackage{bbm}
+\usepackage{fullpage}
+
+\begin{document}
+
+Zackery Field
+
+ID: 23031734
+
+CS 70, Summer 2013
+
+Homework 1 
+
+Problem 2 (9 Points)
+\bigskip
+
+\begin{enumerate}
+\item[2a.] 
+
+Theorem:
+$\forall x \exists y \: (xy \geq x^2)$ 
+
+\bigskip
+
+Proof by Cases:
+
+\bigskip
+Case 1 (where $ x > 0 $):
+
+Let $x > 0 $,
+
+$ xy \geq x^2 \\
+y \geq x$
+
+$xy \geq x^2 $ holds for $y \geq x$
+
+\bigskip
+Case 2 (where $ x < 0 $): 
+
+Let $x < 0 $,
+
+$xy \geq x^2 \\
+y \leq x$
+
+$xy \geq x^2 $ holds for $y \leq x$
+
+\bigskip
+Case 3 (where $ x = 0 $):
+
+Let $x = 0 $,
+
+$xy \geq x^2 \\
+0 \geq 0$
+
+$xy \geq x^2 $ holds for all $y \in \mathbb{R} $
+
+\bigskip
+Let $y = x$,
+
+$xy \geq x^2 \\
+x^2 \geq x^2$
+
+Choosing $y = x$ validates $\forall x \exists y \: (xy \geq x^2) \:, x \in \mathbb{R} $, regardless of choice for x.
+
+\bigskip
+\item[2b.] 
+
+Theorem: 
+$ \exists y \forall x \: (xy \geq x^2)$
+ 
+Proof by contradiction:
+
+Assume for some $ a \in \mathbb{R} $ that $y = a$ satisfies  $ \forall x \: (xy \geq x^2)$
+
+Take $x = 1$,
+
+\begin{eqnarray}
+xa \geq x^2 \\
+-a \geq 1 \\
+a \leq -1
+\end{eqnarray} 
+
+Take $x = -1$
+
+\begin{eqnarray}
+xa \geq x^2 \\
+a \geq 1
+\end{eqnarray}
+
+It has been shown that in order to satisfy $ \forall x \: (xy \geq x^2)$, a must be both $\geq 1$ and $\leq -1$, a contradiction. Therefore, theorem is false.
+
+\bigskip
+\item[2c.]
+
+Theorem:
+$ \neg \forall x \exists y  \: (xy > 0 \rightarrow  y > 0)$ \\
+
+Proof by cases:
+
+\begin{eqnarray}
+\neg \forall x \exists y  \: (xy > 0 \rightarrow  y > 0) \\
+\exists x  \neg \exists y  \: (xy > 0 \rightarrow  y > 0) \\
+\exists x \forall y  \neg \: (xy > 0 \rightarrow  y > 0) \\
+\exists x \forall y \neg \: (xy \leq 0 \vee  y > 0) \\
+\exists x \forall y \: (xy > 0 \vee  y \leq 0) 
+\end{eqnarray}
+
+Take $x = 1$,
+
+\bigskip
+Case 1 ($y > 0$):
+
+$y \leq 0$ causes $xy > 0 \vee  y \leq 0$ to hold, validating the theorem.
+
+\bigskip
+Case 2 ($y \leq 0$):
+
+$y \leq 0$ causes $xy > 0 \vee  y \leq 0$ to hold, validating the theorem.
+
+\bigskip
+For both cases, $y \in \mathbb{R}$, it has been shown that there exists an x s.t. $ \exists x \forall y \: (xy > 0 \vee  y \leq 0$ 
+
+\end{enumerate}
+
+\end{document}

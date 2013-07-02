@@ -1,0 +1,88 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fullpage}
+
+\begin{document}
+
+Zackery Field
+
+ID: 23031734
+
+CS 70, Summer 2013
+
+Homework 1 
+
+Problem 1 (12 Points)
+\bigskip
+
+\begin{enumerate}
+\item[1a.] 
+$ P \wedge (Q \vee P) \equiv P \wedge Q $
+
+\begin{tabular} {1 | c |c | c || c}
+	\hline
+	P & Q & $ P \wedge (Q \vee P)$ & $P \wedge Q $ \\ \hline
+	T & T & T & T \\
+	T & F & T & F \\
+	F & T & F & F \\
+	F & F & F & F \\
+	\hline
+\end{tabular}
+The pair is not equivalent.
+
+\item[1b.] 
+$ (P \Rightarrow Q) \Rightarrow R \equiv P \Rightarrow (Q \Rightarrow R)$
+
+
+\begin{tabular} {1 | c | c |c | c || c}
+	\hline
+	P & Q & R & $ (P \Rightarrow Q) \Rightarrow R$ & $P \Rightarrow (Q \Rightarrow R)$ \\ \hline
+	T & T & T & T & T \\
+	T & F & T & T & T \\
+	F & T & T & T & T \\
+	F & F & T & T & T \\
+	T & T & F & F & F \\
+	T & F & F & T & T \\
+	F & T & F & F & T \\
+	F & F & F & F & T \\
+	\hline
+\end{tabular}
+The pair is not equivalent.
+
+\item[1c.]
+$(P \Rightarrow Q) \Rightarrow (P \Rightarrow R) \equiv P \Rightarrow (Q \Rightarrow R) $
+
+
+\begin{tabular} {1 | c | c | c | c || c}
+	\hline
+	P & Q & R & $(P \Rightarrow Q) \Rightarrow (P \Rightarrow R)$ & $P \Rightarrow (Q \Rightarrow R) $ \\ \hline
+	T & T & T & T & T \\
+	T & F & T & T & T \\
+	F & T & T & T & T \\
+	F & F & T & T & T \\
+	T & T & F & F & F \\
+	T & F & F & T & T \\
+	F & T & F & T & T \\
+	F & F & F & T & T \\
+	\hline
+\end{tabular}
+The pair is equivalent.
+
+
+\item[1d.]
+$(P \wedge \neg Q) \Leftrightarrow (\neg P \vee Q) \equiv (Q \wedge \neg P) \Leftrightarrow (\neg Q \vee P) $
+
+\begin{tabular} {1 | c | c | c | c | c | c | c || c }
+	\hline
+	P & Q & $P \wedge \neg Q$ & $ \neg P \vee Q $ & $ Q \wedge \neg P $ & $ \neg Q \vee  P $ & $(P \wedge \neg Q) \Leftrightarrow (\neg P \vee Q) $ & $ (Q \wedge \neg P) \Leftrightarrow (\neg Q \vee P) $ \\ \hline
+	T & T & F & T & F & T & F & F \\
+	T & F & T & F & F & T & F & F \\
+	F & T & F & T & T & F & F & F \\
+	F & F & F & T & F & T & F & F \\
+	\hline
+\end{tabular}
+The pair is equivalent.
+\end{enumerate}
+
+\end{document}

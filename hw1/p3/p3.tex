@@ -1,0 +1,85 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{amssymb}
+\usepackage[fleqn]{amsmath}
+\usepackage{bbm}
+\usepackage{fullpage}
+
+\begin{document}
+
+Zackery Field
+
+ID: 23031734
+
+CS 70, Summer 2013
+
+Homework 1 
+
+Problem 3 (9 Points)
+\bigskip
+
+\begin{enumerate}
+\item[3a.] [3 points]
+
+Theorem:
+$ \neg \forall x \exists y (P(x) \Rightarrow \neg Q(x,y)) \equiv \exists x \forall y (P(x) \wedge Q(x,y) )$
+
+Proof:
+
+\begin{eqnarray}
+\neg \forall x \exists y (P(x) \Rightarrow \neg Q(x,y)) \equiv \exists x \forall y (P(x) \wedge Q(x,y) ) \\
+\exists x \neg \exists y (P(x) \Rightarrow \neg Q(x,y)) \equiv \exists x \forall y (P(x) \wedge Q(x,y) ) \\
+\exists x \forall y \neg (P(x) \Rightarrow \neg Q(x,y)) \equiv \exists x \forall y (P(x) \wedge Q(x,y) ) \\
+\neg (P(x) \Rightarrow \neg Q(x,y)) \equiv (P(x) \wedge Q(x,y) )
+\end{eqnarray}
+
+Proof by Truth Table: 
+
+\begin{tabular} {1 | c |c | c || c}
+	\hline
+	P & Q & $ \neg (P(x) \Rightarrow \neg Q(x,y))$ & $(P(x) \wedge Q(x,y) )$ \\ \hline
+	T & T & T & T \\
+	T & F & F & F \\
+	F & T & F & F \\
+	F & F & F & F \\
+	\hline
+\end{tabular}
+
+After removing the equivalent quantifiers, the truth table demonstrates that the equivalence holds.
+
+\bigskip
+\item[3b.][3 points]
+
+Theorem:
+$ \forall x \exists y (P(x) \Rightarrow Q(x,y) ) \equiv \forall (P(x) \Rightarrow (\exists Q(x,y))$
+
+Proof:
+
+\begin{eqnarray}
+\forall x \exists y (P(x) \Rightarrow Q(x,y) ) \equiv \forall x (P(x) \Rightarrow (\exists Q(x,y)) \\
+\forall x \exists y (\neg P(x) \vee Q(x,y) ) \equiv \forall x (\neg P(x) \vee (\exists Q(x,y)) \\
+\forall x ( (\exists y \neg P(x)) \vee (\exists y (x,y)) ) \equiv \forall x (\neg P(x) \vee (\exists Q(x,y)) \\
+\forall x ( \neg P(x) \vee (\exists y (x,y)) ) \equiv \forall x (\neg P(x) \vee (\exists Q(x,y))
+\end{eqnarray}
+
+Distributing the quantifiers across disjunction statements, and removing the $\exists y$ from $P(x)$ demonstrates that the equivalence holds.
+
+
+\bigskip
+\item[3c.] [3 points]
+
+Theorem:
+$ \forall x \exists y (Q(x,y) \Rightarrow P(x)) \equiv \forall x ((\exists y Q(x,y)) \Rightarrow P(x)) $
+
+Proof:
+\begin{eqnarray}
+\forall x \exists y (Q(x,y) \Rightarrow P(x)) \equiv \forall x ((\exists y Q(x,y)) \Rightarrow P(x)) \\
+\forall x \exists y (\neg Q(x,y) \vee P(x)) \equiv \forall x (\neg (\exists y Q(x,y)) \vee P(x))  \\
+\forall x (\exists y  \neg Q(x,y) \vee  \exists y P(x)) \equiv \forall x (\neg (\exists y Q(x,y)) \vee P(x))  \\
+\forall x (\exists y  \neg Q(x,y) \vee  P(x)) \neq \forall x (\forall y  \neg Q(x,y) \vee P(x))
+\end{eqnarray}
+
+The equivalence does not hold due to the difference in quantifier associated with Q(x,y).
+
+\end{enumerate}
+
+\end{document}
