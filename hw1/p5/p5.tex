@@ -1,0 +1,153 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{amssymb}
+\usepackage[fleqn]{amsmath}
+\usepackage{bbm}
+\usepackage{fullpage}
+
+\begin{document}
+
+Zackery Field
+
+ID: 23031734
+
+CS 70, Summer 2013
+
+Homework 1 
+
+Problem 5 (7 Points)
+\bigskip
+
+\begin{enumerate}
+\item[5a.] [3 points]
+
+Theorem:
+For all natural numbers n, if n is odd then $n^2 + 2n$ is odd.
+
+Direct Proof:
+
+It can be shown that $n^2$ is odd (for odd n), and $2n$ is even, and that the operation $odd + even$ always produces odd output.
+
+Proof by contradiction ($n^2$ is odd, for odd n):
+
+Assume $n^2 $ is even, for odd n, then $n^2 $ is divisible by only one even number, 2. It follows that if $n^2$ is divisible by 2, then $n$ must be divisible by $\sqrt{2}$, a contradiction since $n \in \mathbb{N}$
+
+Direct proof($2n$ is even):
+
+For any choice of $n$, $2n$, is divisible by 2. Therefore $2n$ is even. 
+
+Direct proof ($even + odd = odd$):
+
+For some numbers $a,b \in \mathbb{N}$, $(2a) + (2b+1)$ is of the form $even + odd$.
+
+\begin{eqnarray}
+(2a) + (2b+1) \\
+= 2(a+b) + 1 \\
+= 2n + 1, \: n \in \mathbb{N} \\
+\end{eqnarray}
+and, by definition, 2n+1 is odd.
+
+
+\bigskip
+\item[5b.][3 points]
+
+Theorem:
+For all natural numbers n, $n^2 + 7n + 1$ is odd.
+
+Proof by cases:
+
+Case 1(n is odd):
+
+For n odd, it can be shown that $n^2 + 7n + 1$ is of the form $odd + odd + 1$ which is $odd$.
+
+Proof by contradiction ($n^2$ is odd, for odd n):
+
+Assume $n^2 $ is even, for odd n, then $n^2 $ is divisible by only one even number, 2. It follows that if $n^2$ is divisible by 2, then $n$ must be divisible by $\sqrt{2}$, a contradiction since $n \in \mathbb{N}$
+
+Direct proof($7n$ is odd):
+
+For any choice of $n$, $7n$, is not divisible by 2. Therefore $7n$ is odd. 
+ 
+Direct proof ($odd + odd = even$):
+
+For some numbers $a, b \in \mathbb{N}$, $(2a + 1) + (2b +1)$ is of the form $odd + odd$.
+
+\begin{eqnarray}
+(2a+1) + (2b+1) \\
+= 2(a+b+1)  \\
+= 2n, \: n \in \mathbb{N} \\
+\end{eqnarray}
+and, by definition, 2n is even.
+
+Following directly from above, if $odd + odd = even$, then $odd + odd + 1 = even + 1$, and $odd + odd + 1 = odd$.
+
+It was shown above that $n^2 + 7n + 1$ is of the form $odd + odd + 1$, proving the theorem for $n \: odd$.
+
+Case 2 (n is even):
+
+It can be shown that $n^2 + 7n + 1$ is of the form $even + even + 1$, for odd $n$.
+
+Direct proof ($n^2$ is even):
+
+If $n$ is even, then for some $m \in \mathbb{N} \: n = 2m$ 
+
+\begin{eqnarray}
+n^2 = (2m)^2 \\
+= 4 * m^2
+\end{eqnarray}
+, and 4 is divisble by 2, so $n^2$ is even.
+
+Direct proof (7n is even):
+
+If $n$ is even, then for some $m \in \mathbb{N} \: n = 2m$ 
+
+\begin{eqnarray}
+7n = 7(2m) \\
+\end{eqnarray}
+which is divisible by 2, and is therefore even.
+
+Direct Proof ($even + even + 1 = odd$):
+
+For some numbers $a, b \in \mathbb{N}$, $(2a) + (2b) + 1 $ is of the form $even + even + 1$.
+
+\begin{eqnarray}
+(2a) + (2b) +1 \\
+= 2(a+b) +1  \\
+= 2n + 1, \: n \in \mathbb{N} \\
+\end{eqnarray}
+and, by definition, 2n+1 is odd.
+
+It was shown above that $n^2 + 7n + 1$ is of the form $even + even + 1$, proving the theorem for $n \: even$.
+
+
+\bigskip
+\item[5c.] [3 points]
+
+Theorem:
+For all real numbers a,b, if $a+b \leq 10 $ then $a \leq 7$ or $b \leq 3$
+
+Proof by contradiction:
+
+Assume, if $a+b \leq 10 $ then $a > 7$ or $b > 3$.
+
+
+
+\bigskip
+\item[5d.] [3 points]
+
+Theorem:
+For all real numbers r, if r is is irrational then r+1 is irrational.
+
+Proof:
+
+\bigskip
+\item[5e.] [3 points]
+
+Theorem:
+For all natural numbers n, $10n^2 > n!$.
+
+Proof:
+
+
+\end{enumerate}
+
+\end{document}
