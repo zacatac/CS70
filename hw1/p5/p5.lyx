@@ -1,0 +1,674 @@
+#LyX file created by tex2lyx 2.0.3
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+
+\usepackage{bbm}\usepackage{fullpage}
+
+
+\end_preamble
+\use_default_options false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize 11
+\spacing single
+\use_hyperref 0
+\papersize letterpaper
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+Zackery Field
+\end_layout
+
+\begin_layout Standard
+
+ID: 23031734
+\end_layout
+
+\begin_layout Standard
+
+CS 70, Summer 2013
+\end_layout
+
+\begin_layout Standard
+
+Homework 1
+\end_layout
+
+\begin_layout Standard
+
+Problem 5 (7 Points) 
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+5a. [3 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+Theorem: For all natural numbers n, if n is odd then 
+\begin_inset Formula $n^2 + 2n$
+\end_inset
+
+ is odd.
+\end_layout
+
+\begin_layout Standard
+
+Direct Proof:
+\end_layout
+
+\begin_layout Standard
+
+It can be shown that 
+\begin_inset Formula $n^2$
+\end_inset
+
+ is odd (for odd n), and 
+\begin_inset Formula $2n$
+\end_inset
+
+ is even, and that the operation 
+\begin_inset Formula $odd + even$
+\end_inset
+
+ always produces odd output.
+\end_layout
+
+\begin_layout Standard
+
+Proof by contradiction (
+\begin_inset Formula $n^2$
+\end_inset
+
+ is odd, for odd n):
+\end_layout
+
+\begin_layout Standard
+
+Assume 
+\begin_inset Formula $n^2 $
+\end_inset
+
+ is even, for odd n, then 
+\begin_inset Formula $n^2 $
+\end_inset
+
+ is divisible by only one even number, 2. It follows that if 
+\begin_inset Formula $n^2$
+\end_inset
+
+ is divisible by 2, then 
+\begin_inset Formula $n$
+\end_inset
+
+ must be divisible by 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+, a contradiction since 
+\begin_inset Formula $n \in \mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+Direct proof(
+\begin_inset Formula $2n$
+\end_inset
+
+ is even):
+\end_layout
+
+\begin_layout Standard
+
+For any choice of 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $2n$
+\end_inset
+
+, is divisible by 2. Therefore 
+\begin_inset Formula $2n$
+\end_inset
+
+ is even.
+\end_layout
+
+\begin_layout Standard
+
+Direct proof (
+\begin_inset Formula $even + odd = odd$
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+
+For some numbers 
+\begin_inset Formula $a,b \in \mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $(2a) + (2b+1)$
+\end_inset
+
+ is of the form 
+\begin_inset Formula $even + odd$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset Formula \begin{eqnarray}
+(2a) + (2b+1) \\
+= 2(a+b) + 1 \\
+= 2n + 1, \: n \in \mathbb{N} \\
+\end{eqnarray}
+\end_inset
+
+and, by definition, 2n+1 is odd.
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+5b.[3 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+Theorem: For all natural numbers n, 
+\begin_inset Formula $n^2 + 7n + 1$
+\end_inset
+
+ is odd.
+\end_layout
+
+\begin_layout Standard
+
+Proof by cases:
+\end_layout
+
+\begin_layout Standard
+
+Case 1(n is odd):
+\end_layout
+
+\begin_layout Standard
+
+For n odd, it can be shown that 
+\begin_inset Formula $n^2 + 7n + 1$
+\end_inset
+
+ is of the form 
+\begin_inset Formula $odd + odd + 1$
+\end_inset
+
+ which is 
+\begin_inset Formula $odd$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+Proof by contradiction (
+\begin_inset Formula $n^2$
+\end_inset
+
+ is odd, for odd n):
+\end_layout
+
+\begin_layout Standard
+
+Assume 
+\begin_inset Formula $n^2 $
+\end_inset
+
+ is even, for odd n, then 
+\begin_inset Formula $n^2 $
+\end_inset
+
+ is divisible by only one even number, 2. It follows that if 
+\begin_inset Formula $n^2$
+\end_inset
+
+ is divisible by 2, then 
+\begin_inset Formula $n$
+\end_inset
+
+ must be divisible by 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+, a contradiction since 
+\begin_inset Formula $n \in \mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+Direct proof(
+\begin_inset Formula $7n$
+\end_inset
+
+ is odd):
+\end_layout
+
+\begin_layout Standard
+
+For any choice of 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $7n$
+\end_inset
+
+, is not divisible by 2. Therefore 
+\begin_inset Formula $7n$
+\end_inset
+
+ is odd.
+\end_layout
+
+\begin_layout Standard
+
+Direct proof (
+\begin_inset Formula $odd + odd = even$
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+
+For some numbers 
+\begin_inset Formula $a, b \in \mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $(2a + 1) + (2b +1)$
+\end_inset
+
+ is of the form 
+\begin_inset Formula $odd + odd$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset Formula \begin{eqnarray}
+(2a+1) + (2b+1) \\
+= 2(a+b+1)  \\
+= 2n, \: n \in \mathbb{N} \\
+\end{eqnarray}
+\end_inset
+
+and, by definition, 2n is even.
+\end_layout
+
+\begin_layout Standard
+
+Following directly from above, if 
+\begin_inset Formula $odd + odd = even$
+\end_inset
+
+, then 
+\begin_inset Formula $odd + odd + 1 = even + 1$
+\end_inset
+
+, and 
+\begin_inset Formula $odd + odd + 1 = odd$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+It was shown above that 
+\begin_inset Formula $n^2 + 7n + 1$
+\end_inset
+
+ is of the form 
+\begin_inset Formula $odd + odd + 1$
+\end_inset
+
+, proving the theorem for 
+\begin_inset Formula $n \: odd$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+Case 2 (n is even):
+\end_layout
+
+\begin_layout Standard
+
+It can be shown that 
+\begin_inset Formula $n^2 + 7n + 1$
+\end_inset
+
+ is of the form 
+\begin_inset Formula $even + even + 1$
+\end_inset
+
+, for odd 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+Direct proof (
+\begin_inset Formula $n^2$
+\end_inset
+
+ is even):
+\end_layout
+
+\begin_layout Standard
+
+If 
+\begin_inset Formula $n$
+\end_inset
+
+ is even, then for some 
+\begin_inset Formula $m \in \mathbb{N} \: n = 2m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset Formula \begin{eqnarray}
+n^2 = (2m)^2 \\
+= 4 * m^2
+\end{eqnarray}
+\end_inset
+
+, and 4 is divisble by 2, so 
+\begin_inset Formula $n^2$
+\end_inset
+
+ is even.
+\end_layout
+
+\begin_layout Standard
+
+Direct proof (7n is even):
+\end_layout
+
+\begin_layout Standard
+
+If 
+\begin_inset Formula $n$
+\end_inset
+
+ is even, then for some 
+\begin_inset Formula $m \in \mathbb{N} \: n = 2m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset Formula \begin{eqnarray}
+7n = 7(2m) \\
+\end{eqnarray}
+\end_inset
+
+which is divisible by 2, and is therefore even.
+\end_layout
+
+\begin_layout Standard
+
+Direct Proof (
+\begin_inset Formula $even + even + 1 = odd$
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+
+For some numbers 
+\begin_inset Formula $a, b \in \mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $(2a) + (2b) + 1 $
+\end_inset
+
+ is of the form 
+\begin_inset Formula $even + even + 1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset Formula \begin{eqnarray}
+(2a) + (2b) +1 \\
+= 2(a+b) +1  \\
+= 2n + 1, \: n \in \mathbb{N} \\
+\end{eqnarray}
+\end_inset
+
+and, by definition, 2n+1 is odd.
+\end_layout
+
+\begin_layout Standard
+
+It was shown above that 
+\begin_inset Formula $n^2 + 7n + 1$
+\end_inset
+
+ is of the form 
+\begin_inset Formula $even + even + 1$
+\end_inset
+
+, proving the theorem for 
+\begin_inset Formula $n \: even$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+5c. [3 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+Theorem: For all real numbers a,b, if 
+\begin_inset Formula $a+b \leq 10 $
+\end_inset
+
+ then 
+\begin_inset Formula $a \leq 7$
+\end_inset
+
+ or 
+\begin_inset Formula $b \leq 3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+Proof by contradiction:
+\end_layout
+
+\begin_layout Standard
+
+Assume, if 
+\begin_inset Formula $a+b \leq 10 $
+\end_inset
+
+ then 
+\begin_inset Formula $a > 7$
+\end_inset
+
+ or 
+\begin_inset Formula $b > 3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+5d. [3 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+Theorem: For all real numbers r, if r is is irrational then r+1 is irrational.
+\end_layout
+
+\begin_layout Standard
+
+Proof:
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+5e. [3 points]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+Theorem: For all natural numbers n, 
+\begin_inset Formula $10n^2 > n!$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+Proof:
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

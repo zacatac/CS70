@@ -1,0 +1,83 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{amssymb}
+\usepackage[fleqn]{amsmath}
+\usepackage{bbm}
+\usepackage{fullpage}
+
+\begin{document}
+
+Zackery Field
+
+ID: 23031734
+
+CS 70, Summer 2013
+
+Homework 1 
+
+Problem 9 (12 Points)
+\bigskip
+
+\begin{enumerate}
+
+\item[8a] [2 points] 
+
+Theorem:
+
+$(\forall n \in \mathbb{N})(P(n))$
+
+Explanation:
+
+This proposition is possibly, but not necessairly true. P(0) can be either true or false and $P(k) \Rightarrow P(k+2)$ will still hold.
+
+\item[8b] [2 points]
+
+Theorem:
+
+$(\forall n \in \mathbb{N})(\neg P(n))$
+
+Explanation:
+
+This proposition is possibly, but not certainly true. If all P(n) are false, then $P(k) \Rightarrow P(k+2)$ will hold $\forall k \in \mathbb{N}$.
+
+\item[8c] [2 points]
+
+Theorem:
+
+$ P(0) \Rightarrow (\forall n \in \mathbb{N})(P(n+2))$
+
+Explanation:
+
+This proposition is possibly, but not certainly, true. P(0) can be either true or false, and so can $(\forall n \in \mathbb{N})(P(n+2))$  since $P(k) \Rightarrow P(k+2)$ will hold $\forall k \in \mathbb{N}$. An example of  $(\forall n \in \mathbb{N})(P(n+2))$ false, is when $ \forall k \in \mathbb{N} \neg P(k) $
+
+\item[8d] [2 points]
+
+Theorem:
+
+$(P(0) \wedge P(1)) \Rightarrow (\vee n \in \mathbb{N})(P(n))$
+
+Explanation:
+
+This proposition is certainly true. An example of when this proposition holds is when P(0) is false, which still allows  $P(k) \Rightarrow P(k+2)$ to hold. Having both P(0) and P(1) be true means that all subsequent P(n) will be true, according to $\forall k \in \mathbb{N} P(k) \Rightarrow P(k+2)$ 
+
+\item[8e] [2 points]
+
+Theorem:
+
+$(\forall n \in \mathbb{N}) (P(n) \Rightarrow ((\exists m \in \mathbb{N}) (m > n + 2013 \wedge P(m))))$
+
+Explanation:
+
+This proposition is certainly true. What the implication is describing is that, further down from n, there is some element m s.t. P(m) is true. This is always true when considering the fact that when you come across one P(n) true, then at every k+2 value ahead of n, P(that value) will be true.
+
+\item[8f] [2 points]
+
+Theorem:
+
+$(\forall n \in \mathbb{N}) (n<2013 \Rightarrow P(n)) \wedge (\forall n \in \mathbb{N}) (n \geq 2013 \Rightarrow \neg P(n))$
+
+Explanation:
+
+This proposition is certainly false. The left hand side of the conjunction is true when all P(n) for n $<$ 2013 are true, and the right hand side of the conjunction is true when all P(n) are false for n $\geq$ 2013. This would mean that there is some k for which $P(k) \Rightarrow P(k+2)$ is false. 
+\end{enumerate}
+
+\end{document}
