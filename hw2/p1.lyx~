@@ -667,8 +667,8 @@ A
 \begin_inset Newline newline
 \end_inset
 
-A pairing as explained above can be described as, {(A,3),(B,1),(C,2)}, where
- each unmatched-pair is a rogue couple.
+A pairing where each unmatched-pair is a rogue couple can be described by:
+ {(A,3),(B,1),(C,2)}.
 \begin_inset Newline newline
 \end_inset
 

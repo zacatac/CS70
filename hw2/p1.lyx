@@ -94,9 +94,9 @@ Problem 1 [9 Points]
 
 \begin_deeper
 \begin_layout Enumerate
-In a stable marriage instance, if a man M and a woman W each put each other
- at the top of their respective preference lists, then M must be paired
- with W in every stable pairing.
+[3 Points]In a stable marriage instance, if a man M and a woman W each put
+ each other at the top of their respective preference lists, then M must
+ be paired with W in every stable pairing.
  
 \begin_inset Newline newline
 \end_inset
@@ -116,8 +116,8 @@ True.
 \end_layout
 
 \begin_layout Enumerate
-In a stable marriage instance with at least two men and two women, if man
- M and woman W put each other at the bottom of their respective prefernce
+[3 Points] In a stable marriage instance with at least two men and two women,
+ if man M and woman W put each other at the bottom of their respective prefernce
  lists, then M cannot be paired with W in any stable pairing.
 \begin_inset Newline newline
 \end_inset
@@ -393,7 +393,7 @@ In this case there is a stable pairing: {(B,2),(C,1),(A,3)}, where A and
 \end_layout
 
 \begin_layout Enumerate
-For every 
+[3 Points] For every 
 \begin_inset Formula $n\geq2$
 \end_inset
 
