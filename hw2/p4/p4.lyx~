@@ -1,0 +1,264 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+
+\usepackage{fullpage}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Zackery Field
+\end_layout
+
+\begin_layout Standard
+ID: 23031734
+\end_layout
+
+\begin_layout Standard
+CS 70, Summer 2013
+\end_layout
+
+\begin_layout Standard
+Homework 2
+\end_layout
+
+\begin_layout Standard
+Problem 4 [10 Points] 
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[10 Points] Application of the extended Euclidean algorithm to find linear
+ combinations.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+[5 Points] Use the algorithm to compute GCD(4725, 273) and express GCD(4725,
+ 273) as 
+\begin_inset Formula $a*4725+b*273$
+\end_inset
+
+, for some integers a,b.
+ Show all steps of the algorithm.
+\begin_inset Newline newline
+\end_inset
+
+Finding the GCD:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+4725 & = & 17*273+84\\
+273 & = & 3*84+21\\
+84 & = & 4*21\\
+GCD & = & 21
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Forming 
+\begin_inset Formula $GCD=a*x+b*y$
+\end_inset
+
+: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+21 & = & 273-3*84\\
+ & = & 273-3(4725-17*273)\\
+ & = & -3*4725+52*273\\
+a & = & -3\\
+b & = & 52
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula $21=(-3*4725)+(52*273)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[5 Points] Prove that for all 
+\begin_inset Formula $x>0$
+\end_inset
+
+ and 
+\begin_inset Formula $y>0$
+\end_inset
+
+, 
+\begin_inset Formula $GCD(x,y)$
+\end_inset
+
+ is the smallest positive number that can be written as an integer linear
+ combination of 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Proof by contradiction:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Assume that there is a smaller positive number than
+\begin_inset Formula $GCD(x,y)$
+\end_inset
+
+ that can be written as a linear combination of x and y.
+ Let 
+\begin_inset Formula $sx+ty<GCD(x,y)$
+\end_inset
+
+ , and 
+\begin_inset Formula $t>0$
+\end_inset
+
+, describe the assumed integer linear combination.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+sx+ty & < & GCD(x,y)\\
+\frac{sx+ty}{GCD(x,y)} & < & 1\\
+s\frac{x}{GCD(x,y)}+t\frac{y}{GCD(x,y)} & < & 1\\
+sq+tr & < & 1,where:\{q,r\}\in\mathbb{Z}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula $q\geq1$
+\end_inset
+
+and 
+\begin_inset Formula $r\geq1$
+\end_inset
+
+.
+ Taking the least case, where 
+\begin_inset Formula $\{q,r\}=1$
+\end_inset
+
+, then we confirm 
+\begin_inset Formula $s+t<1$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $0<t<1$
+\end_inset
+
+and 
+\begin_inset Formula $0<s<1$
+\end_inset
+
+, a contradiction since we assumed that 
+\begin_inset Formula $sx+ty$
+\end_inset
+
+ was a positive integer linear combination of x and y.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

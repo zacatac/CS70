@@ -1,0 +1,243 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+
+\usepackage{fullpage}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Zackery Field
+\end_layout
+
+\begin_layout Standard
+ID: 23031734
+\end_layout
+
+\begin_layout Standard
+CS 70, Summer 2013
+\end_layout
+
+\begin_layout Standard
+Homework 2
+\end_layout
+
+\begin_layout Standard
+Problem 7 [12 Points] 
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[15 Points] Concerning Fermat's Little Theorem
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+[7 Points] Prove Fermat's Little Theorem.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Direct Proof:
+\begin_inset Newline newline
+\end_inset
+
+The set of p-1 numbers 
+\begin_inset Formula $\left\{ a*1,a*2,\ldots,a*(p-1)\right\} $
+\end_inset
+
+for 
+\begin_inset Formula $a\in\left\{ 1,2,\ldots,p-1\right\} $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Let two numbers qa, and ra be of the form 
+\begin_inset Formula $q\equiv r(modp)$
+\end_inset
+
+, it follows that the collection of multiples of a (from the set above)
+ must be unique mod p, and non-zero mod p (non-zero because p is never reached
+ and no member of the set is itself zero).
+ Let S be the multiplication of all the set of p-1 numbers, defined as:
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S:\{a*1*a*2*\cdots*a*(p-1)\}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The product S can be rewritten as: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+a^{p-1}(p-1)! & \equiv & (p-1)!(modp)\\
+a^{p-1} & \equiv & 1(modp)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[5 Points] For every positive integer not necessairly prime, let 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ be the set of integers 
+\begin_inset Formula $a\in\{1,2,\ldots,n-1\}$
+\end_inset
+
+ such that 
+\begin_inset Formula $GCD(a,n)=1$
+\end_inset
+
+.
+ Then for every 
+\begin_inset Formula $a\in S_{n}$
+\end_inset
+
+we have 
+\begin_inset Formula $a^{|S_{n}|}\equiv1(modn)$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Direct Proof:
+\begin_inset Newline newline
+\end_inset
+
+The set of n-1 numbers 
+\begin_inset Formula $S_{n}\in\left\{ 1,2,\ldots,n-1\right\} $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Let two numbers qa, and ra be of the form 
+\begin_inset Formula $q\equiv r(modp)$
+\end_inset
+
+, it follows that the members of the set
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ above must be unique mod n, and non-zero mod n (non-zero because n is never
+ reached and no member of the set is itself zero).
+ Let T be the multiplication of all the set of n-1 numbers, defined as:
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T:\{a*1*a*2*\cdots*a*(n-1)\}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The product T can be rewritten as: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+a^{n-1}(n-1)! & \equiv & (n-1)!(modn)\\
+a^{n-1} & \equiv & 1(modn)\\
+a^{n-1} & \equiv & a^{|S_{n}|}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

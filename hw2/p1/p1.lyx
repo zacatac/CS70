@@ -94,9 +94,9 @@ Problem 1 [9 Points]
 
 \begin_deeper
 \begin_layout Enumerate
-In a stable marriage instance, if a man M and a woman W each put each other
- at the top of their respective preference lists, then M must be paired
- with W in every stable pairing.
+[3 Points]In a stable marriage instance, if a man M and a woman W each put
+ each other at the top of their respective preference lists, then M must
+ be paired with W in every stable pairing.
  
 \begin_inset Newline newline
 \end_inset
@@ -116,8 +116,8 @@ True.
 \end_layout
 
 \begin_layout Enumerate
-In a stable marriage instance with at least two men and two women, if man
- M and woman W put each other at the bottom of their respective prefernce
+[3 Points] In a stable marriage instance with at least two men and two women,
+ if man M and woman W put each other at the bottom of their respective prefernce
  lists, then M cannot be paired with W in any stable pairing.
 \begin_inset Newline newline
 \end_inset
@@ -393,7 +393,7 @@ In this case there is a stable pairing: {(B,2),(C,1),(A,3)}, where A and
 \end_layout
 
 \begin_layout Enumerate
-For every 
+[3 Points] For every 
 \begin_inset Formula $n\geq2$
 \end_inset
 
@@ -678,7 +678,7 @@ Observing that this case can be constructed for
 
 , it can be shown that pairing structure will hold for the general case,
  
-\begin_inset Formula $n\geq3$
+\begin_inset Formula $n\geq2$
 \end_inset
 
 .
@@ -686,171 +686,33 @@ Observing that this case can be constructed for
 \begin_inset Newline newline
 \end_inset
 
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="4">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-M_1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-*
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-*
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-W_1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-M_2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-*
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-*
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-W_2
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-*
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-*
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-*
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-*
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-M_n
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-*
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-*
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-W_n
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
+Men's preference list:
+\begin_inset Formula $\begin{array}{ccc}
+M_{1} & \cdots & W_{1}\\
+M_{2} & \cdots & W_{2}\\
+\vdots & \ddots & \vdots\\
+M_{n} & \cdots & W_{n}
+\end{array}$
 \end_inset
 
+ Women's preference list:
+\begin_inset Formula $\begin{array}{ccc}
+W_{1} & \cdots & M_{1}\\
+W_{2} & \cdots & M_{2}\\
+\vdots & \ddots & \vdots\\
+W_{n} & \cdots & M_{n}
+\end{array}$
+\end_inset
 
+ 
+\begin_inset Newline newline
+\end_inset
+
+There exists a pairing 
+\begin_inset Formula $\{(M_{1},W_{1}),(M_{2},W_{2}),\cdots,(M_{n},W_{n})\}$
+\end_inset
+
+, where each unpaired couple is rogue.
 \end_layout
 
 \end_deeper
